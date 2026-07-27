@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<head>
+   <title>ICT Club - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #ffffff;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* FLOATING PILL NAV BAR */
+    header {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      background: rgba(18, 24, 38, 0.95);
+      padding: 10px 25px;
+      border-radius: 50px;
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.15);
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff007f;
+      transform: translateY(-2px);
+    }
+
+    nav a.active {
+      color: #ffffff;
+      background: #ff007f;
+      box-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
+    }
+
+    /* 2-COLUMN HERO LAYOUT */
+    .hero {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+      text-align: left;
+    }
+
+    .hero-text h1 {
+      font-size: 3.5rem;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      color: #00f2fe;
+    }
+
+    .hero-text h1 span {
+      color: #ff007f;
+      display: block;
+    }
+
+    .hero-text p {
+      color: #94a3b8;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    /* NEON GLOWING JOIN BUTTON */
+    .btn-join {
+      background: transparent;
+      color: #00f2fe;
+      border: 2px solid #00f2fe;
+      padding: 14px 35px;
+      font-size: 1.1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .btn-join:hover {
+      background: #00f2fe;
+      color: #0b0f19;
+      box-shadow: 0 0 25px #00f2fe;
+      transform: scale(1.05) rotate(-1deg);
+    }
+
+    /* FLOATING GRAPHIC BADGE (ANIMATION) */
+    @keyframes floatBadge {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(3deg); }
+      100% { transform: translateY(0px) rotate(0deg); }
+    }
+
+    .hero-badge {
+      width: 280px;
+      height: 280px;
+      background: linear-gradient(135deg, rgba(255, 0, 127, 0.2), rgba(0, 242, 254, 0.2));
+      border: 2px dashed #ff007f;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      animation: floatBadge 6s infinite ease-in-out;
+    }
+
+    .hero-badge .icon {
+      font-size: 4rem;
+    }
+
+    .hero-badge span {
+      font-weight: bold;
+      color: #00f2fe;
+      letter-spacing: 2px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="club index.html" class="active">Home</a>
+      <a href="activities.html">Activities</a>
+      <a href="officers.html">Officers</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1>BAGONG HAHANAPIN <span>SA TEKNOLOHIYA</span></h1>
+      <p>Sumali sa ICT Club! Dito natin bubuoin ang mga makabagong kaisipan sa coding, hardware, at digital innovation.</p>
+      <a href="activities.html" class="btn-join">JOIN NOW</a>
+    </div>
+
+    <div class="hero-badge">
+      <div class="icon">💻</div>
+      <span>ICT CLUB 2026</span>
+    </div>
+  </div>
+
+</body>
+</html>

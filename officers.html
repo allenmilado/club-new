@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<head>
+   <title>ICT Club - Officers</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #0b0f19;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav {
+      background: rgba(18, 24, 38, 0.95);
+      padding: 10px 25px;
+      border-radius: 50px;
+      border: 1px solid rgba(0, 242, 254, 0.3);
+      box-shadow: 0 0 20px rgba(0, 242, 254, 0.15);
+      display: flex;
+      gap: 15px;
+    }
+
+    nav a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff007f;
+      transform: translateY(-2px);
+    }
+
+    nav a.active {
+      color: #ffffff;
+      background: #ff007f;
+      box-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
+    }
+
+    h1.title {
+      text-align: center;
+      margin: 30px 0;
+      color: #ff007f;
+      font-size: 2.2rem;
+    }
+
+    .officers-wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .officer-row {
+      background: #121826;
+      border: 1px solid rgba(255, 0, 127, 0.2);
+      border-radius: 20px 0 20px 0;
+      padding: 15px 25px;
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      transition: all 0.3s ease;
+    }
+
+    .officer-row:hover {
+      transform: scale(1.02) skewX(-2deg);
+      border-color: #00f2fe;
+      box-shadow: -10px 10px 20px rgba(0, 242, 254, 0.2);
+    }
+
+    .officer-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 12px;
+      object-fit: cover;
+      border: 2px solid #ff007f;
+      background: #0b0f19;
+      transition: transform 0.3s ease;
+    }
+
+    .officer-row:hover .officer-img {
+      transform: scale(1.1) rotate(5deg);
+      border-color: #00f2fe;
+    }
+
+    .officer-info h3 {
+      font-size: 1.3rem;
+      color: #ffffff;
+    }
+
+    .officer-info span {
+      color: #00f2fe;
+      font-size: 0.85rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="club index.html">Home</a>
+      <a href="activities.html">Activities</a>
+      <a href="officers.html" class="active">Officers</a>
+    </nav>
+  </header>
+
+  <h1 class="title">CLUB OFFICERS</h1>
+
+  <div class="officers-wrapper">
+    <div class="officer-row">
+      <!-- Palitan ang src ng totoong picture path (halimbawa: src="images/juan.jpg") -->
+      <img src="president.jpg" alt="President" class="officer-img" onerror="this.src='https://via.placeholder.com/150/ff007f/ffffff?text=President'">
+      <div class="officer-info">
+        <h3>Juan Dela Cruz</h3>
+        <span>PRESIDENT</span>
+      </div>
+    </div>
+
+    <div class="officer-row">
+      <img src="vice-president.jpg" alt="Vice President" class="officer-img" onerror="this.src='https://via.placeholder.com/150/00f2fe/0b0f19?text=VP'">
+      <div class="officer-info">
+        <h3>Maria Santos</h3>
+        <span>VICE PRESIDENT</span>
+      </div>
+    </div>
+
+    <div class="officer-row">
+      <img src="secretary.jpg" alt="Secretary" class="officer-img" onerror="this.src='https://via.placeholder.com/150/ff007f/ffffff?text=Secretary'">
+      <div class="officer-info">
+        <h3>Pedro Penduko</h3>
+        <span>SECRETARY</span>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

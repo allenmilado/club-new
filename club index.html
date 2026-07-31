@@ -16,8 +16,7 @@
       overflow-x: hidden;
     }
 
-  
-    header {
+       .header {
       display: flex;
       justify-content: center;
       padding: 20px;
@@ -26,7 +25,7 @@
       z-index: 100;
     }
 
-    nav {
+    .nav {
       background: rgba(18, 24, 38, 0.95);
       padding: 10px 25px;
       border-radius: 50px;
@@ -36,7 +35,7 @@
       gap: 15px;
     }
 
-    nav a {
+    .nav a {
       color: #94a3b8;
       text-decoration: none;
       font-weight: 700;
@@ -45,19 +44,19 @@
       transition: all 0.3s ease;
     }
 
-    nav a:hover {
+    .nav a:hover {
       color: #ff007f;
       transform: translateY(-2px);
     }
 
-    nav a.active {
+    .nav a.active {
       color: #ffffff;
       background: #ff007f;
       box-shadow: 0 0 15px rgba(255, 0, 127, 0.6);
     }
 
-    
-    hero {
+   
+    .hero {
       max-width: 1000px;
       margin: 60px auto;
       padding: 0 20px;
@@ -68,33 +67,32 @@
       flex-wrap: wrap;
     }
 
-    hero-text {
+    .hero-text {
       flex: 1;
       min-width: 300px;
       text-align: left;
     }
 
-    hero-text h1 {
+    .hero-text h1 {
       font-size: 3.5rem;
       line-height: 1.1;
       margin-bottom: 20px;
       color: #00f2fe;
     }
 
-    hero-text h1 span {
+    .hero-text h1 span {
       color: #ff007f;
       display: block;
     }
 
-    hero-text p {
+    .hero-text p {
       color: #94a3b8;
       font-size: 1.1rem;
       line-height: 1.6;
       margin-bottom: 30px;
     }
 
-
-    btn-join {
+       .btn-join {
       background: transparent;
       color: #00f2fe;
       border: 2px solid #00f2fe;
@@ -107,21 +105,20 @@
       transition: all 0.3s ease;
     }
 
-    btn-join:hover {
+    .btn-join:hover {
       background: #00f2fe;
       color: #0b0f19;
       box-shadow: 0 0 25px #00f2fe;
       transform: scale(1.05) rotate(-1deg);
     }
 
-  
-    @keyframes floatBadge {
+       @keyframes floatBadge {
       0% { transform: translateY(0px) rotate(0deg); }
       50% { transform: translateY(-15px) rotate(3deg); }
       100% { transform: translateY(0px) rotate(0deg); }
     }
 
-    hero-badge {
+    .hero-badge {
       width: 280px;
       height: 280px;
       background: linear-gradient(135deg, rgba(255, 0, 127, 0.2), rgba(0, 242, 254, 0.2));
@@ -134,11 +131,11 @@
       animation: floatBadge 6s infinite ease-in-out;
     }
 
-    hero-badge .icon {
+    .hero-badge .icon {
       font-size: 4rem;
     }
 
-    hero-badge span {
+    .hero-badge span {
       font-weight: bold;
       color: #00f2fe;
       letter-spacing: 2px;
@@ -158,8 +155,8 @@
 
   <div class="hero">
     <div class="hero-text">
-      <h1>BAGONG HAHANAPIN <span>SA TEKNOLOHIYA</span></h1>
-      <p>Sumali sa ICT Club! Dito natin bubuoin ang mga makabagong kaisipan sa coding, hardware, at digital innovation.</p>
+      <h1>NEW SEARCH <span>IN TECHNOLOGY</span></h1>
+      <p>Join the ICT Club! Here, we will develop innovative ideas in coding, hardware, and digital innovation.</p>
       <a href="activities.html" class="btn-join">JOIN NOW</a>
     </div>
 
